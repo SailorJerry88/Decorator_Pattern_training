@@ -1,17 +1,17 @@
 package b_strukturalne.decorator_demo;
 
 public class BodyTypeDecorator extends AnimalDecorator{
-    protected BodyType type;
+    protected BodyType type1;
 
-    BodyTypeDecorator(Animal decorateAnimal,BodyType type){
+    BodyTypeDecorator(Animal decorateAnimal,BodyType type1){
         super(decorateAnimal);
-        this.type = type;
+        this.type1 = type1;
     }
 
     @Override
     public void becomeAlive() {
         decoratedAnimal.becomeAlive();
-        System.out.println("Its body type is" + type.toString());
+        System.out.println("Its body type is " + type1.toString());
 
     }
 
@@ -26,6 +26,6 @@ public class BodyTypeDecorator extends AnimalDecorator{
 
         return decoratedAnimal.discription()
                 + "of body type "
-                + type.toString();
+                + type1.toString();
     }
 }

@@ -2,8 +2,14 @@ package b_strukturalne.decorator_demo;
 
 public enum FoodType {
     FISH,
-    VEGE,
+    TOMATOS,
     EGGS,
-    MEAT;
+    MEAT,
+    FRIES,
+    PIZZA,
+    BURGERS,
+    PASTA,
+    ICECREAMS,
+
 
 }
